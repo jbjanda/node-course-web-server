@@ -60,6 +60,12 @@ app.get('/form', (req, res)=>{
         pageTitle: 'Form',
     });
 });
+
+app.get('/projects', (req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'Projects',
+    });
+});
 app.listen(port, () => {
     console.log(`server now started on port ${port}`);
     // console.log(JSON.stringify(test, undefined, 2));
